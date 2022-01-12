@@ -72,3 +72,19 @@ select {
 		scroll-behavior: auto !important;
 	}
 }
+
+ul {
+	display: flex;
+	padding: 10px;
+	margin: auto;
+	list-style: none;
+	border: 1px solid red;
+}
+
+ul > .logo {
+	margin-right: auto;
+}
+
+ul > li {
+	padding: 0 2%;
+}
