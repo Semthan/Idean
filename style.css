@@ -74,17 +74,26 @@ select {
 }
 
 ul {
-	display: flex;
-	padding: 10px;
-	margin: auto;
 	list-style: none;
-	border: 1px solid red;
 }
 
-ul > .logo {
+li {
+	font-size: 1.125rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main_nav > ul {
+	display: flex;
+	margin: auto;
+}
+
+.main_nav .logo {
 	margin-right: auto;
 }
 
-ul > li {
+.main_nav li {
 	padding: 0 2%;
 }
