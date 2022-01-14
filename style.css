@@ -120,8 +120,13 @@ a {
 	line-height: 1.2;
 }
 
-footer h6 {
+footer h6,
+footer p,
+.copyright a {
 	color: #c5cdcc;
+}
+
+footer h6 {
 	font-size: 0.8rem;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -139,4 +144,30 @@ footer h6 {
 .upcoming p {
 	color: #c5cdcc;
 	font-size: 0.8rem;
+}
+
+.bottom_footer {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+}
+
+.social_media li {
+	display: inline-block;
+	margin: -5px 20px -5px 0;
+}
+
+.social_media i {
+	font-size: 1.3rem;
+}
+
+.bottom_footer i {
+	color: #828d99;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin: 15px;
 }
