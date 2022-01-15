@@ -134,7 +134,19 @@ main {
 	padding: 0 11vw;
 	bottom: 0;
 	width: 100%;
-	border: 1px solid blue;
+}
+
+.middle_block {
+	width: 82%;
+	margin: auto;
+	padding: 7% 8.5%;
+	background-color: white;
+	border: 1px solid green;
+}
+
+article {
+	display: block;
+	border: 1px solid red;
 }
 
 .text_block {
@@ -156,19 +168,6 @@ main {
 	font-size: 4.5rem;
 	font-weight: 600;
 	line-height: 1;
-}
-
-.middle_content {
-	width: 80%;
-	margin: auto;
-	background-color: white;
-	border: 1px solid green;
-}
-
-.middle_content_inner {
-	width: 80%;
-	margin: auto;
-	border: 1px solid blue;
 }
 
 /* section_one */
