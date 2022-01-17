@@ -280,6 +280,24 @@ blockquote::before {
 	background-color: #002acc;
 }
 
+.website p {
+	margin: 20px 0;
+}
+
+.stats {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.stats_block {
+	width: 50%;
+}
+
+.stats_block h1 {
+	font-size: 5rem;
+	color: #002acc;
+}
+
 /* Footer */
 .inner_footer {
 	padding: 5% 7%;
