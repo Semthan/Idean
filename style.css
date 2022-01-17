@@ -138,10 +138,11 @@ hr {
 	display: flex;
 }
 
-.container h5 {
-	margin-top: 0;
+.text_on_edge {
 	width: 17%;
+	margin-top: 0;
 	flex-shrink: 0;
+	color: #828d99;
 }
 
 .text_container p {
