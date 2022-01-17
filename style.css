@@ -45,7 +45,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-	max-width: 100%;
+	width: 100%;
 	display: block;
 }
 
@@ -85,10 +85,6 @@ a {
 	text-decoration: none;
 }
 
-hr {
-	margin: 50px -27.5%;
-}
-
 /* header */
 .main_nav > ul {
 	display: flex;
@@ -114,6 +110,10 @@ article {
 	border: 1px solid red;
 }
 
+hr {
+	margin: 50px 0;
+}
+
 .text_block {
 	color: black;
 	line-height: 1.7;
@@ -123,6 +123,30 @@ article {
 .text_block p {
 	font-size: 1.25rem;
 	margin: 27px 0;
+}
+
+.text_container {
+	/* display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 0 -25%; */
+	padding: 4% 0;
+	border: 1px solid blue;
+}
+
+.container {
+	display: flex;
+}
+
+.container h5 {
+	margin-top: 0;
+	width: 17%;
+	flex-shrink: 0;
+}
+
+.text_container p {
+	margin-top: 0;
+	width: 82%;
 }
 
 /* hero */
@@ -178,7 +202,6 @@ article {
 }
 
 /* section_one */
-
 .section_one {
 	margin-top: -80px;
 }
