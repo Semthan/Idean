@@ -86,6 +86,11 @@ a {
 }
 
 /* header */
+.main_nav {
+	position: relative;
+	padding: 0 11vw;
+}
+
 .main_nav > ul {
 	display: flex;
 	margin: auto;
@@ -107,7 +112,6 @@ main {
 
 article {
 	display: block;
-	border: 1px solid red;
 }
 
 .middle_block {
@@ -115,7 +119,6 @@ article {
 	margin: auto;
 	padding: 7% 8.5%;
 	background-color: white;
-	border: 1px solid green;
 }
 
 hr {
@@ -125,7 +128,6 @@ hr {
 .text_block {
 	color: black;
 	line-height: 1.7;
-	/* border: 1px solid blue; */
 }
 
 .text_block p {
@@ -134,12 +136,7 @@ hr {
 }
 
 .text_container {
-	/* display: flex;
-	flex-direction: row;
-	width: 100%;
-	margin: 0 -25%; */
 	padding: 4% 0;
-	border: 1px solid blue;
 }
 
 .container {
@@ -215,7 +212,6 @@ hr {
 
 form {
 	display: flex;
-	/* 	border: 1px solid green; */
 }
 
 .column {
