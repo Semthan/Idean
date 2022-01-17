@@ -248,17 +248,16 @@ input[type="text"] {
 }
 
 /* section_two */
-.fake_video p {
+.fake_video p,
+.Helsinki p,
+.website p,
+.vision p {
 	margin: 20px 0;
 }
 
 .section_two a {
 	color: black;
 	text-decoration: underline blue;
-}
-
-.Helsinki p {
-	margin: 20px 0;
 }
 
 blockquote {
@@ -278,10 +277,6 @@ blockquote::before {
 	display: block;
 	position: absolute;
 	background-color: #002acc;
-}
-
-.website p {
-	margin: 20px 0;
 }
 
 .stats {
