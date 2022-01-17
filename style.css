@@ -293,6 +293,13 @@ blockquote::before {
 	color: #002acc;
 }
 
+.press a {
+	color: black;
+	font-size: 1rem;
+	text-decoration: none;
+	border-bottom: 2px solid #002acc;
+}
+
 /* Footer */
 .inner_footer {
 	padding: 5% 7%;
