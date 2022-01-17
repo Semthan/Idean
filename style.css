@@ -85,6 +85,10 @@ a {
 	text-decoration: none;
 }
 
+hr {
+	margin: 50px -27.5%;
+}
+
 /* header */
 .main_nav > ul {
 	display: flex;
@@ -103,6 +107,22 @@ a {
 main {
 	position: relative;
 	padding: 0 11vw;
+}
+
+article {
+	display: block;
+	border: 1px solid red;
+}
+
+.text_block {
+	color: black;
+	line-height: 1.7;
+	/* border: 1px solid blue; */
+}
+
+.text_block p {
+	font-size: 1.25rem;
+	margin: 27px 0;
 }
 
 /* hero */
@@ -144,19 +164,6 @@ main {
 	border: 1px solid green;
 }
 
-article {
-	display: block;
-	border: 1px solid red;
-}
-
-.text_block {
-	width: 82%;
-	margin: auto;
-	padding: 7% 8.5%;
-	background-color: white;
-	border: 1px solid red;
-}
-
 .hero_content p {
 	font-size: 1.125rem;
 	color: #828d99;
@@ -171,6 +178,49 @@ article {
 }
 
 /* section_one */
+
+.section_one {
+	margin-top: -80px;
+}
+
+.section_one h3 {
+	font-weight: 400;
+	font-size: 2.5rem;
+}
+
+form {
+	display: flex;
+	/* 	border: 1px solid green; */
+}
+
+.column {
+	width: 50%;
+	padding: 5px 10px 5px 0;
+}
+
+.form label {
+	font-size: 0.8rem;
+	color: #828d99;
+	text-transform: uppercase;
+}
+
+input[type="text"] {
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 1px solid #828d99;
+}
+
+.g-recaptcha {
+	margin: 20px 0;
+}
+
+.column button {
+	width: 25%;
+	height: 30px;
+	background-color: whitesmoke;
+	border: 2px solid rebeccapurple;
+}
 
 /* Footer */
 .inner_footer {
