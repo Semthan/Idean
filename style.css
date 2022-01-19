@@ -73,6 +73,10 @@ select {
 	}
 }
 
+html {
+	font-family: Tiempos Text, serif;
+}
+
 ul {
 	list-style: none;
 }
@@ -187,16 +191,20 @@ hr {
 }
 
 .hero_content p {
-	font-size: 1.125rem;
-	color: #828d99;
+	font-size: 0.875rem;
+	color: black;
 	font-weight: 700;
-	line-height: 2;
+	line-height: 1.7143;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.hero_content h1 {
-	font-size: 4.5rem;
-	font-weight: 600;
-	line-height: 1;
+.hero_content h2 {
+	font-size: 4rem;
+	line-height: 1.125;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.03125rem;
+	color: #000;
 }
 
 /* section_one */
