@@ -222,8 +222,7 @@ hr {
 	margin-top: -80px;
 }
 
-.section_one h3,
-.section_two h3 {
+.section_one h3 {
 	font-size: 3rem;
 	line-height: 1.1667;
 	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -271,6 +270,11 @@ input[type="text"] {
 .website p,
 .vision p {
 	margin: 20px 0;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	font-family: Eina 01, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-style: normal;
+	color: #000;
 }
 
 .trailer {
@@ -293,12 +297,23 @@ input[type="text"] {
 	content: "";
 }
 
+.section_two h1 {
+	font-size: 3rem;
+	line-height: 1.1667;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.025rem;
+	color: #000;
+}
+
 blockquote {
 	position: relative;
-	font-size: 2.5rem;
-	max-width: 600px;
+	font-size: 3rem;
 	font-weight: 700;
+	line-height: 1.1667;
 	margin: 0 25px;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	color: #000;
 }
 
 blockquote::before {
@@ -326,11 +341,13 @@ blockquote::before {
 	color: #002acc;
 }
 
-.press a {
-	color: black;
-	font-size: 1rem;
-	text-decoration: none;
-	border-bottom: 2px solid #002acc;
+.section_two h2 {
+	font-size: 2rem;
+	line-height: 1.25;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.01562rem;
+	color: #000;
 }
 
 /* Footer */
@@ -413,8 +430,19 @@ footer h6 {
 		line-height: 1.7778;
 	}
 
+	.section_two h1,
 	h3 {
 		font-size: 2.5rem;
 		line-height: 1.2;
+	}
+
+	blockquote {
+		font-size: 2.5rem;
+		line-height: 1.2;
+	}
+
+	.section_two h2 {
+		font-size: 1.5rem;
+		line-height: 1.3333;
 	}
 }
