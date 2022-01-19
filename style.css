@@ -350,6 +350,12 @@ blockquote::before {
 	color: #000;
 }
 
+.news_links {
+	margin-top: -30px;
+	width: 82%;
+	margin-right: 17.14286%;
+}
+
 /* Footer */
 .inner_footer {
 	padding: 5% 7%;
