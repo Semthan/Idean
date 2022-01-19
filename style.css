@@ -82,6 +82,12 @@ ul {
 	list-style: none;
 }
 
+nav ol,
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
 li {
 	font-size: 1.25rem;
 }
@@ -357,25 +363,52 @@ blockquote::before {
 }
 
 /* Footer */
-.inner_footer {
-	padding: 5% 7%;
-	background-color: black;
-}
-
-.top_footer {
+footer {
+	padding: 7.5rem 11.11111vw 8rem;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	font-family: Eina 01, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-style: normal;
+	color: #828d99;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	background-color: #000;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
-.top_footer a {
-	color: white;
-	font-size: 1rem;
+.footer_nav {
+	width: 25.71429%;
 }
 
-.footer_nav a {
-	font-size: 2rem;
+footer a {
+	display: inline-block;
+	border: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+footer nav > ul a {
+	font-size: 3rem;
+	line-height: 1.1667;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
 	font-weight: 700;
-	line-height: 1.2;
+	letter-spacing: -0.025rem;
+	color: #fff;
+	display: inline-block;
+	padding: 0.1em 0;
+	border: 0;
+}
+
+footer nav > ul a:focus,
+footer nav > ul a:hover {
+	color: #002acc;
 }
 
 footer h6,
@@ -390,7 +423,7 @@ footer h6 {
 	text-transform: uppercase;
 }
 
-.upcoming {
+/* .upcoming {
 	max-width: 250px;
 }
 
@@ -402,7 +435,7 @@ footer h6 {
 .upcoming p {
 	color: #c5cdcc;
 	font-size: 0.8rem;
-}
+} */
 
 .bottom_footer {
 	display: flex;
@@ -450,5 +483,10 @@ footer h6 {
 	.section_two h2 {
 		font-size: 1.5rem;
 		line-height: 1.3333;
+	}
+
+	footer nav > ul a {
+		font-size: 2.5rem;
+		line-height: 1.2;
 	}
 }
