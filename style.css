@@ -88,12 +88,25 @@ nav ul {
 	margin: 0;
 }
 
-li {
-	font-size: 1.25rem;
-}
-
 p {
 	margin: 1.7em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1em 0;
+}
+
+h6 {
+	font-size: 0.875rem;
+	line-height: 1.7143;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	color: #000;
 }
 
 a {
@@ -411,6 +424,39 @@ footer nav > ul a:hover {
 	color: #002acc;
 }
 
+.locations {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 51.42857%;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.locations nav {
+	width: 50%;
+	white-space: nowrap;
+}
+
+.locations a {
+	font-size: 1.5rem;
+	line-height: 1.3333;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.01rem;
+	color: #fff;
+	padding: 0.44444em 0;
+}
+
+.locations a:focus,
+.locations a:hover {
+	color: #002acc;
+}
+
+.footer ul + h6 {
+	margin-top: 3em;
+}
+
 footer h6,
 footer p,
 .copyright a {
@@ -418,9 +464,13 @@ footer p,
 }
 
 footer h6 {
-	font-size: 0.8rem;
-	margin-bottom: 10px;
-	text-transform: uppercase;
+	margin-top: 0.625rem;
+	margin-bottom: 1.25rem;
+	color: #c5cdcc;
+}
+
+.locations ul {
+	margin-top: -0.5rem;
 }
 
 /* .upcoming {
@@ -488,5 +538,9 @@ footer h6 {
 	footer nav > ul a {
 		font-size: 2.5rem;
 		line-height: 1.2;
+	}
+
+	.locations a {
+		font-size: 1.25rem;
 	}
 }
