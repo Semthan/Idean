@@ -35,6 +35,7 @@ body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	font-size: 1.25rem;
 }
 
 /* A elements that don't have a class get default styles */
@@ -85,8 +86,19 @@ li {
 	font-size: 1.25rem;
 }
 
+p {
+	margin: 1.7em 0;
+}
+
 a {
+	color: inherit;
 	text-decoration: none;
+	background-color: transparent;
+	border-bottom: 0.125rem solid #002acc;
+}
+
+a:hover {
+	border-color: #ff5b5d;
 }
 
 /* header */
@@ -131,12 +143,6 @@ hr {
 
 .text_block {
 	color: black;
-	line-height: 1.7;
-}
-
-.text_block p {
-	font-size: 1.25rem;
-	margin: 27px 0;
 }
 
 .text_container {
@@ -151,6 +157,10 @@ hr {
 	width: 17%;
 	margin-top: 0;
 	flex-shrink: 0;
+	font-size: 0.875rem;
+	line-height: 1.7143;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
 	color: #828d99;
 }
 
@@ -214,8 +224,12 @@ hr {
 
 .section_one h3,
 .section_two h3 {
-	font-weight: 600;
-	font-size: 2.5rem;
+	font-size: 3rem;
+	line-height: 1.1667;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.025rem;
+	color: #000;
 }
 
 form {
@@ -376,4 +390,16 @@ footer h6 {
 	justify-content: space-between;
 	width: 60%;
 	margin: 15px;
+}
+
+@media screen and (max-width: 1920px) {
+	body {
+		font-size: 1.125rem;
+		line-height: 1.7778;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+		line-height: 1.2;
+	}
 }
