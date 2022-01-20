@@ -407,7 +407,11 @@ footer a {
 	transition: all 0.3s ease-out;
 }
 
-footer nav > ul a {
+footer a:hover {
+	color: #002acc;
+}
+
+.footer_nav > ul a {
 	font-size: 3rem;
 	line-height: 1.1667;
 	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -419,8 +423,8 @@ footer nav > ul a {
 	border: 0;
 }
 
-footer nav > ul a:focus,
-footer nav > ul a:hover {
+.footer_nav > ul a:focus,
+.footer_nav > ul a:hover {
 	color: #002acc;
 }
 
@@ -448,9 +452,8 @@ footer nav > ul a:hover {
 	padding: 0.44444em 0;
 }
 
-.locations a:focus,
 .locations a:hover {
-	color: #002acc;
+	fill: #fff;
 }
 
 .footer ul + h6 {
@@ -489,28 +492,96 @@ footer h6 {
 
 .bottom_footer {
 	display: flex;
-	width: 70%;
-	justify-content: space-between;
+	width: 100%;
+	margin-top: 5.5rem;
+}
+
+.social_media {
+	padding-right: 3rem;
+	margin-left: -0.875rem;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
 }
 
 .social_media li {
 	display: inline-block;
-	margin: -5px 20px -5px 0;
 }
 
-.social_media i {
-	font-size: 1.3rem;
+.social_media a {
+	max-width: 3.5rem;
+	padding: 0.5rem 0.75rem;
 }
 
-.bottom_footer i {
-	color: #828d99;
+.icon-4Ds2f {
+	position: relative;
+	display: inline-block;
+	line-height: 1;
+	vertical-align: middle;
+	background-color: transparent;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	fill: #000;
+}
+
+.social_media svg {
+	height: 2rem;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	fill: #828d99;
+}
+
+.social_media a:hover svg {
+	fill: #fff;
 }
 
 .copyright {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	width: 60%;
-	margin: 15px;
+	padding-bottom: 0.6875rem;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.copyright_inner {
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	font-family: Eina 01, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-style: normal;
+	color: #000;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.copyright_inner > div {
+	color: #828d99;
+}
+
+.copyright_inner > p {
+	display: inline-block;
+	margin: 0 1rem 0 0;
+}
+
+.copyright_inner a {
+	margin-right: 1rem;
+	margin-bottom: -0.0625rem;
+	white-space: nowrap;
+	border-bottom: 1px solid transparent;
+}
+
+.copyright a {
+	border-bottom: 1px solid #000;
+}
+
+.copyright a:focus,
+.copyright a:hover {
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
 @media screen and (max-width: 1920px) {
@@ -535,7 +606,7 @@ footer h6 {
 		line-height: 1.3333;
 	}
 
-	footer nav > ul a {
+	.footer_nav > ul a {
 		font-size: 2.5rem;
 		line-height: 1.2;
 	}
