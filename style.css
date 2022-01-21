@@ -12,10 +12,6 @@
 
 /* Remove default margin */
 body,
-h1,
-h2,
-h3,
-h4,
 p,
 figure,
 blockquote,
@@ -127,22 +123,164 @@ a:hover {
 }
 
 /* header */
-.main_nav {
+header {
+	padding-right: 11.11111vw;
+	padding-left: 11.11111vw;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	height: 5rem;
+	-webkit-transition: padding-left 0.3s ease-in-out,
+		padding-right 0.3s ease-in-out;
+	transition: padding-left 0.3s ease-in-out, padding-right 0.3s ease-in-out;
+}
+
+header a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+.background-1I056 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 5rem;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+[data-scroll-topregion="true"] .background-1I056 {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+
+.primary-2_AZ0 .background-1I056,
+.secondary-30WXx .background-1I056 {
+	background: #fff;
+}
+
+.nav_container {
 	position: relative;
-	padding: 0 11vw;
-}
-
-.main_nav > ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	margin: auto;
+	height: 100%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
 }
 
-.main_nav .logo {
-	margin-right: auto;
+header.active-3383T .main_nav,
+.main_nav {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.logo-3Js97 {
+	position: absolute;
+	top: 1.625rem;
+	right: 100%;
+	width: 4.25rem;
+	line-height: 0;
+	border: 0;
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.icon-4Ds2f {
+	position: relative;
+	display: inline-block;
+	line-height: 1;
+	vertical-align: middle;
+	background-color: transparent;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	fill: #000;
+}
+
+.logo-3Js97 svg {
+	height: 2.125rem;
+	-webkit-transition: fill 0.3s ease-out;
+	transition: fill 0.3s ease-out;
+	fill: #000;
+}
+
+.inverted-sG9xS .logo-3Js97 svg,
+.inverted-sG9xS .logo-3Js97:focus svg,
+.inverted-sG9xS .logo-3Js97:hover svg {
+	fill: #fff;
+}
+
+.main_nav ul {
+	margin-right: -1rem;
+	font-family: Eina 01, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.33334;
 }
 
 .main_nav li {
-	padding: 0 2%;
+	display: inline-block;
+}
+
+.main_nav a {
+	position: relative;
+	display: inline-block;
+	padding: 0.125rem 1rem 0.375rem;
+	color: #000;
+	border: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.inverted-sG9xS .main_nav a {
+	color: #fff;
+}
+
+.main_nav a::after {
+	position: absolute;
+	right: 1rem;
+	bottom: 0;
+	left: 1rem;
+	display: block;
+	height: 0.1875rem;
+	background-color: transparent;
+	content: "";
+}
+
+.inverted-sG9xS:not(.active-3383T) .main_nav ul:focus a,
+.inverted-sG9xS:not(.active-3383T) .main_nav ul:hover a {
+	color: hsla(0, 0%, 100%, 0.35);
+}
+
+.inverted-sG9xS:not(.active-3383T) .main_nav ul:focus a:focus,
+.inverted-sG9xS:not(.active-3383T) .main_nav ul:focus a:hover,
+.inverted-sG9xS:not(.active-3383T) .main_nav ul:hover a:focus,
+.inverted-sG9xS:not(.active-3383T) .main_nav ul:hover a:hover {
+	color: #fff;
+}
+
+.main_nav a.active-3383T::after,
+.main_nav a:focus::after,
+.main_nav a:hover::after {
+	background-color: #000;
+}
+
+.inverted-sG9xS .main_nav a.active-3383T::after,
+.inverted-sG9xS .main_nav a:focus::after,
+.inverted-sG9xS .main_nav a:hover::after {
+	background-color: #fff;
 }
 
 /* main */
@@ -549,7 +687,7 @@ footer h6 {
 	padding: 0.5rem 0.75rem;
 }
 
-.icon-4Ds2f {
+/* .icon-4Ds2f {
 	position: relative;
 	display: inline-block;
 	line-height: 1;
@@ -558,7 +696,7 @@ footer h6 {
 	background-position: 50%;
 	background-repeat: no-repeat;
 	fill: #000;
-}
+} */
 
 .social_media svg {
 	height: 2rem;
