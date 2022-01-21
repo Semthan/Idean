@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Tiempos Text";
-	src: url("/TestTiemposText-Regular.otf");
+	src: url("Fonts/TestTiemposText-Regular.otf");
 }
 
 /* Box sizing rules */
@@ -101,6 +101,15 @@ h4,
 h5,
 h6 {
 	margin: 1em 0;
+}
+
+h2 {
+	font-size: 4rem;
+	line-height: 1.125;
+	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.03125rem;
+	color: #000;
 }
 
 h6 {
@@ -296,7 +305,7 @@ article {
 .middle_block {
 	width: 82%;
 	margin: auto;
-	padding: 7% 8.5%;
+	padding: 7.14286% 8.57143%;
 	background-color: white;
 }
 
@@ -358,26 +367,23 @@ hr {
 
 .hero_content {
 	position: absolute;
-	padding: 0 11vw;
 	bottom: 0;
 	width: 100%;
 }
 
 .hero_content p {
 	font-size: 0.875rem;
-	color: black;
-	font-weight: 700;
 	line-height: 1.7143;
 	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 700;
+	color: #000;
+	width: 100%;
+	margin: 0 0 0.5rem;
 }
 
 .hero_content h2 {
-	font-size: 4rem;
-	line-height: 1.125;
-	font-family: Eina 03, system, -apple-system, BlinkMacSystemFont, sans-serif;
-	font-weight: 700;
-	letter-spacing: -0.03125rem;
-	color: #000;
+	width: 100%;
+	margin: 0;
 }
 
 /* section_one */
@@ -759,10 +765,24 @@ footer h6 {
 	border-bottom: 1px solid #fff;
 }
 
+@media screen and (min-width: 1024px) {
+	.hero_content {
+		padding-right: 11.11111vw;
+		padding-left: 11.11111vw;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
 @media screen and (max-width: 1920px) {
 	body {
 		font-size: 1.125rem;
 		line-height: 1.7778;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+		line-height: 1.1429;
 	}
 
 	.section_two h1,
