@@ -346,6 +346,16 @@ blockquote::before {
 	background-color: #002acc;
 }
 
+.phone_pics {
+	display: flex;
+	padding-bottom: 8%;
+}
+
+.phone_pics img {
+	width: 31.42857%;
+	margin-right: 2.85714%;
+}
+
 .stats {
 	display: flex;
 	flex-wrap: wrap;
