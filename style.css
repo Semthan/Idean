@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Tiempos Text";
+	src: url("/TestTiemposText-Regular.otf");
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -76,6 +81,7 @@ select {
 
 html {
 	font-family: Tiempos Text, serif;
+	font-size: 16px;
 }
 
 ul {
