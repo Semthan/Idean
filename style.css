@@ -700,20 +700,6 @@ footer h6 {
 	margin-top: -0.5rem;
 }
 
-/* .upcoming {
-	max-width: 250px;
-}
-
-.upcoming a {
-	font-size: 1.4rem;
-	font-weight: 900;
-}
-
-.upcoming p {
-	color: #c5cdcc;
-	font-size: 0.8rem;
-} */
-
 .bottom_footer {
 	display: flex;
 	width: 100%;
@@ -735,17 +721,6 @@ footer h6 {
 	max-width: 3.5rem;
 	padding: 0.5rem 0.75rem;
 }
-
-/* .icon-4Ds2f {
-	position: relative;
-	display: inline-block;
-	line-height: 1;
-	vertical-align: middle;
-	background-color: transparent;
-	background-position: 50%;
-	background-repeat: no-repeat;
-	fill: #000;
-} */
 
 .social_media svg {
 	height: 2rem;
