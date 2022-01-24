@@ -3,6 +3,14 @@
 	src: url("Fonts/TestTiemposText-Regular.otf");
 }
 
+/* @font-face {
+	font-family: "Eina 03";
+	src: url("/static/fonts/textaxis-eina03-bold-webfont.woff2"),
+		url("/static/fonts/textaxis-eina03-bold-webfont.woff");
+	font-style: normal;
+	font-weight: 700;
+} */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -160,10 +168,6 @@ header {
 	transition: padding-left 0.3s ease-in-out, padding-right 0.3s ease-in-out;
 }
 
-.black {
-	background-color: #000;
-}
-
 header a {
 	-webkit-tap-highlight-color: transparent;
 }
@@ -178,11 +182,6 @@ header a {
 	transform: translate3d(0, -100%, 0);
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-}
-
-[data-scroll-topregion="true"] .background-1I056 {
-	-webkit-transform: translate3d(0, -100%, 0);
-	transform: translate3d(0, -100%, 0);
 }
 
 .primary-2_AZ0 .background-1I056,
@@ -202,6 +201,24 @@ header a {
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
+}
+
+.hide_navbar {
+	display: none;
+}
+
+.show_navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 5rem;
+	color: #000;
+	background-color: white;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 header.active-3383T .main_nav,
@@ -238,7 +255,7 @@ header.active-3383T .main_nav,
 	height: 2.125rem;
 	-webkit-transition: fill 0.3s ease-out;
 	transition: fill 0.3s ease-out;
-	fill: #000;
+	fill: black;
 }
 
 .inverted-sG9xS .logo-3Js97 svg,
